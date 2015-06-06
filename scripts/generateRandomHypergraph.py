@@ -18,7 +18,7 @@ if numVertices>len(totalVertices):
 
 vertices = random.sample(totalVertices,numVertices)
 
-fo.write("#Vertices:"+str(len(vertices))+'\n')
+#fo.write("#Vertices:"+str(len(vertices))+'\n')
 
 for vertexStart in vertices:
 	for vertexEnd in vertices:
