@@ -21,6 +21,13 @@ vertices = random.sample(totalVertices,numVertices)
 for vertexStart in vertices:
 	for vertexEnd in vertices:
 		if random.random() < 0.4:
-			fo.write(vertexStart + ' - '+ vertexEnd + '\n')
+			hyperEdge = vertexStart + ' - '+ vertexEnd
+			for vertexN in vertices:
+				if vertexN != vertexEnd and vertexN!=vertexStart:
+					if random.random() < 0.4:
+						hyperEdge += ' - ' +vertexN
+					else:
+						fo.write(hyperEdge + '\n')
+						break
 
 fo.close()
