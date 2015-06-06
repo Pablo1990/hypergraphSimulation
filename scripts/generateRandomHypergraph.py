@@ -22,12 +22,15 @@ for vertexStart in vertices:
 	for vertexEnd in vertices:
 		if random.random() < 0.4:
 			hyperEdge = vertexStart + ' - '+ vertexEnd
-			for vertexN in vertices:
-				if vertexN != vertexEnd and vertexN!=vertexStart:
-					if random.random() < 0.4:
-						hyperEdge += ' - ' +vertexN
-					else:
-						fo.write(hyperEdge + '\n')
-						break
+			if vertexEnd != vertexStart:
+				for vertexN in vertices:
+					if vertexN != vertexEnd and vertexN!=vertexStart:
+						if random.random() < 0.4:
+							hyperEdge += ' - ' +vertexN
+						else:
+							fo.write(hyperEdge + '\n')
+							break
+			else:
+				fo.write(hyperEdge + '\n')
 
 fo.close()
