@@ -20,4 +20,5 @@ createIncidenceMatrix <- function (hg) {
     he <- makeIncidenceColumn(indexes, length(vertex))
     incidenceMatrix <- cbind(incidenceMatrix, he)
   }
+  return (incidenceMatrix)
 }

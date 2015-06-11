@@ -5,6 +5,8 @@
 import sys
 import random
 
+#http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats
+
 numVertices = int(sys.argv[1])
 
 nameFile = 'hypergraph'+str(random.randint(1,100000))+'.sif'
