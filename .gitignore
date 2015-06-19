@@ -56,3 +56,13 @@ docs/_build/
 # PyBuilder
 target/
 .Rproj.user
+/hypergraphVisor/nbproject/private/
+/bin/
+
+*.mat
+
+hypergraphs/.project
+
+.classpath
+
+*.prefs
